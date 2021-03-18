@@ -1,6 +1,9 @@
 pipeline {
-			image 'alpine:latest' 
-		}
+    agent { 
+        docker { 
+            image 'alpine:latest' 
+        }
+    }
 	environment {
 		json='''[
 		{
