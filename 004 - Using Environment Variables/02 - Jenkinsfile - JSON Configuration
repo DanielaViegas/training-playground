@@ -1,7 +1,6 @@
 pipeline {
 			image 'alpine:latest' 
 		}
-	}
 	environment {
 		json='''[
 		{
